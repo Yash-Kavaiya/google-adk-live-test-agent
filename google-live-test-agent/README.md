@@ -26,7 +26,7 @@ This template handles all the complex WebSocket and media streaming "plumbing," 
 
 ## Use Cases & Examples
 This template is the foundation for any application that requires an AI to see, hear, and talk in real-time.
-- **Real-Time Tutors:** An agent that can watch you solve a math problem (via screen share) and talk you through it. *This is the default behavior of this example agent.*
+- **Interview Coaching:** An agent that can run live mock interview rounds and provide immediate feedback. *This is the default behavior in this fork.*
 - **Live Customer Support:** An agent that can visually guide a user through a website or product setup.
 - **Accessibility Tools:** A "be my eyes" agent that can describe a user's surroundings or the content of their screen.
 - **Interactive Assistant:** An agent that pairs with you, watches you work, and provides real-time feedback or assistance.
@@ -149,8 +149,8 @@ This repository is designed for easy reuse. You don't need to change any Python 
 
 **Simply edit the `AGENT_INSTRUCTION` in your `server/example_agent/prompts.py` file.**
 
-### Example: Expert Math Tutor -> Generic Assistant
-To turn your "Math Tutor" agent into a "Generic Assistant", stop your server, replace the AGENT_INSTRUCTION in `server/example_agent/prompts.py` with the following, and restart the server.
+### Example: Interview Coach -> Generic Assistant
+To turn this interview coach into a generic assistant, stop your server, replace `AGENT_INSTRUCTION` in `server/example_agent/prompts.py` with the following, and restart the server.
 
 ```
 AGENT_INSTRUCTION="You are a helpful and friendly AI assistant. Keep your responses concise."
